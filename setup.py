@@ -6,10 +6,12 @@ setup(
     description='Phone call queuing and management for the Django web framework using an Asterisk server',
     long_description=open('README').read(),
     author='Maximiliano Bertacchini',
+    author_email='maxiberta@gmail.com',
     url='https://github.com/maxiberta/django-asterisk',
     packages=[
         'django-asterisk',
     ],
+    requires=['pyst'],
     classifiers=[
         'Classifier: Development Status :: 4 - Beta',
         'Classifier: Environment :: Web Environment',

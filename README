@@ -1,38 +1,44 @@
-INTRO
-=====
+Description
+===========
+
 django-asterisk is a reusable Django app for queuing and managing phone calls, inspired and based on django-mailer. It makes calls through the Management interface of an Asterisk server.
 
 
-SETUP
+Setup
 =====
+
 * Add the django_asterisk app in settings.INSTALLED_APPS
 
-* Set the following variables in settings.py:
-AST_HOST = 'localhost'
-AST_USER = 'django'
-AST_PASS = 'mysecret'
-AST_PRIO = 1
-AST_TIMEOUT_ORIGINATE = 30 # sec
-AST_TIMEOUT_HANGUP = 120 # sec
+* Set the following variables in settings.py::
+
+    AST_HOST = 'localhost'
+    AST_USER = 'django'
+    AST_PASS = 'mysecret'
+    AST_PRIO = 1
+    AST_TIMEOUT_ORIGINATE = 30 # sec
+    AST_TIMEOUT_HANGUP = 120 # sec
 
 * Change the default passwords!!
 
 
-REQUIREMENTS
+Requirements
 ============
+
 * pyst (http://pyst.sf.net/)
 
 * a working Asterisk server (see docs/asterisk for a sample config)
 
 
-USAGE
 =====
-Supposing you have an object called 'user' with the 'phone_number' attribute, you can create and queue a call like this:
+Usage
+=====
 
-from django_asterisk.models import Call
-channel = 'SIP/%s@mysipprovider' % user.phone_number
-call = Call(channel=channel, extension=user.phone_number, context='django-out', caller_id='"Django Asterisk Test" <0123456789>', related_object=user)
-call.save()
+Supposing you have an object called 'user' with the 'phone_number' attribute, you can create and queue a call like this::
+
+    from django_asterisk.models import Call
+    channel = 'SIP/%s@mysipprovider' % user.phone_number
+    call = Call(channel=channel, extension=user.phone_number, context='django-out', caller_id='"Django Asterisk Test" <0123456789>', related_object=user)
+    call.save()
 
 You can later make the call from the admin, by selecting it and executing the "Make call" action.
 
