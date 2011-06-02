@@ -9,7 +9,7 @@ setup(
     author_email='maxiberta@gmail.com',
     url='https://github.com/maxiberta/django-asterisk',
     packages=[
-        'django-asterisk',
+        'django_asterisk',
     ],
     requires=['pyst'],
     classifiers=[
