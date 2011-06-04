@@ -13,16 +13,16 @@ setup(
     ],
     requires=['pyst'],
     classifiers=[
-        'Classifier: Development Status :: 4 - Beta',
-        'Classifier: Environment :: Web Environment',
-        'Classifier: Framework :: Django',
-        'Classifier: Intended Audience :: Developers',
-        'Classifier: Intended Audience :: System Administrators',
-        'Classifier: Intended Audience :: Telecommunications Industry',
-        'Classifier: License :: OSI Approved :: MIT License',
-        'Classifier: Operating System :: OS Independent',
-        'Classifier: Programming Language :: Python',
-        'Classifier: Topic :: Communications :: Telephony',
+        'Development Status :: 4 - Beta',
+        'Environment :: Web Environment',
+        'Framework :: Django',
+        'Intended Audience :: Developers',
+        'Intended Audience :: System Administrators',
+        'Intended Audience :: Telecommunications Industry',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python',
+        'Topic :: Communications :: Telephony',
     ]
 )
 
