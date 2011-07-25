@@ -1,11 +1,11 @@
-Description
-===========
+Django Asterisk
+===============
 
 django-asterisk is a reusable Django app for queuing and managing phone calls, inspired and based on django-mailer. It makes calls through the Management interface of an Asterisk server.
 
 
 Setup
-=====
+-----
 
 * Add the django_asterisk app in settings.INSTALLED_APPS
 
@@ -22,16 +22,15 @@ Setup
 
 
 Requirements
-============
+------------
 
 * pyst (http://pyst.sf.net/)
 
 * a working Asterisk server (see docs/asterisk for a sample config)
 
 
-=====
 Usage
-=====
+-----
 
 Supposing you have an object called 'user' with the 'phone_number' attribute, you can create and queue a call like this::
 
